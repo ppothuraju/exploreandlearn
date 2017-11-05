@@ -1,0 +1,140 @@
+package com.axone.howjunitworks;
+
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+ 
+/**
+ * This class provides capability to do a UFOSurvey for extra-terrestrial sightings 
+ * @author karthik
+ *
+ */
+public class UFOSurvey {
+ 
+		//private instance variable
+       private Map<Integer, Set<String>> alienSightings;
+ 
+       /**
+        * zero-arg constructor giving an empty instance of alienSightings 
+        */
+       public UFOSurvey() {
+              super();
+              this.alienSightings = new TreeMap<>();
+             
+       }
+      
+       public Map<Integer, Set<String>> getAlienSightings() {
+              return alienSightings;
+       }
+ 
+       public void setAlienSightings(Map<Integer, Set<String>> alienSightings) {
+              this.alienSightings = alienSightings;
+       }
+ 
+       
+       
+       /**
+        * this method helps add the extra-terrestrial sightings 
+        * 
+        * @param anAreaCode - the area code for extra-terrestrial sightings
+        * @param aColour
+        * @return boolean
+        */
+	public boolean addSighting(Integer anAreaCode, String aColour) {
+
+		boolean retVal = false;
+
+		if (!this.alienSightings.containsKey(anAreaCode)) {
+			Set<String> colourSet = new HashSet<>();
+			colourSet.add(aColour);
+			this.alienSightings.put(anAreaCode, colourSet);
+			retVal = true;//returns true only if the colourSet has been added i.e. the collection updated
+			return retVal;
+		} else {
+			retVal = this.alienSightings.get(anAreaCode).add(aColour);
+			return retVal;
+		}
+
+	}
+      
+	/**
+	 * This method finds set of areas for colour matching in the input parameters
+	 * 
+	 * @param aColour
+	 * @return Set<Integer>
+	 */
+	public Set<Integer> findAreasForColour(String aColour) {
+			Set<Integer> areaCodes = new HashSet<>();
+			for (Integer code : alienSightings.keySet()) {
+				//check the input colour matches the collection
+				if(alienSightings.get(code).contains(aColour)){
+					areaCodes.add(code);
+				}
+			}
+			
+			return areaCodes;
+		
+	}
+
+	//test your class
+       public static void main(String[] args) {
+              UFOSurvey mySurvey = new UFOSurvey();
+              mySurvey.addSighting(52, "Azure");
+              mySurvey.addSighting(52, "Lime");
+              mySurvey.addSighting(52, "Purple");
+              mySurvey.addSighting(52, "Purple");
+             
+ 
+              mySurvey.addSighting(49, "HoneyDew");
+              mySurvey.addSighting(49, "Ash");
+              mySurvey.addSighting(49, "Red");
+ 
+              mySurvey.addSighting(48, "Coral");
+             
+              mySurvey.addSighting(51, "Purple");
+              mySurvey.addSighting(51, "Navy");
+              mySurvey.addSighting(51, "Teal");
+              mySurvey.addSighting(51, "Coral");
+             
+             
+              mySurvey.addSighting(50, "Red");
+              mySurvey.addSighting(50, "Indigo");
+ 
+             
+              System.out.println(mySurvey.getAlienSightings());
+              System.out.println(mySurvey.findAreasForColour("Coral"));
+              System.out.println(mySurvey.findAreasForColour("Purple"));
+       }
+      
+      
+      
+}
+
+
+
+import java.util.Arrays;
+
+public class ModuleTwo {
+
+public static void main(String[] args)	{
+
+int numArray[] = {1,3,4,5,6,3,2,4,6,7,9,4,12,3,4,6,8,9,7,6,43,2,4,7,7,5,2,1,3,4,6,31,1,1};
+
+Arrays.sort(numArray);
+int num = numArray[0];
+int count = -1;
+for (int i=0; i<numArray.length; i++)
+{
+if(numArray[i] == num)
+{
+count++;
+continue;
+}
+System.out.println(num + " - Repeated " + count + " times.");
+num = numArray[i];
+count = 1;
+}
+System.out.println(num + " - Repeated " + count + " times.");
+}
+}

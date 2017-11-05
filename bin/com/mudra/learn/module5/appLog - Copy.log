@@ -1,0 +1,58 @@
+Hello this is a debug message 
+Hello this is an info message 
+Hello this is a debug message 
+Hello this is an info message 
+2017-10-14 20:23:40,388 Hello this is a debug message 
+2017-10-14 20:23:40,435 Hello this is an info message 
+2017-10-14 20:24:34,652 DEBUG Hello this is a debug message 
+2017-10-14 20:24:34,652 INFO  Hello this is an info message 
+2017-10-14 20:25:21,657 [DEBUG] com.mudra.learn.module5.MyFirstLog Hello this is a debug message 
+2017-10-14 20:25:21,657 [INFO ] com.mudra.learn.module5.MyFirstLog Hello this is an info message 
+2017-10-14 21:13:06,723 [DEBUG] com.mudra.learn.module5.MyFirstLog The file is not found to open 
+2017-10-14 21:13:06,723 [DEBUG] com.mudra.learn.module5.MyFirstLog The file is not found to open 
+2017-10-14 21:33:00,714 [DEBUG] com.mudra.learn.module5.MyFirstLog The file is not found to open 
+2017-10-14 21:33:00,714 [DEBUG] com.mudra.learn.module5.MyFirstLog The file is not found to open 
+2017-10-14 21:34:47,528 [DEBUG] com.mudra.learn.module5.MyFirstLog The file has been successfully opened  
+2017-10-14 21:34:47,528 [DEBUG] com.mudra.learn.module5.MyFirstLog The file has been successfully opened  
+2017-10-14 21:44:22,890 [DEBUG] com.mudra.learn.module5.MyFirstLog File Not Found Exception - File path is 
+java.io.FileNotFoundException: C:\Users\ppothuraju\workspace\LearnJava\src\com\mudra\learn\module5\readme1.txt (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.mudra.learn.module5.MyFirstLog.readFile(MyFirstLog.java:30)
+	at com.mudra.learn.module5.MyFirstLog.<init>(MyFirstLog.java:22)
+	at com.mudra.learn.module5.MyFirstLog.main(MyFirstLog.java:58)
+2017-10-14 21:44:22,937 [DEBUG] com.mudra.learn.module5.MyFirstLog File Not Found Exception - File path is 
+java.io.FileNotFoundException: C:\Users\ppothuraju\workspace\LearnJava\src\com\mudra\learn\module5\readme1.txt (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.mudra.learn.module5.MyFirstLog.readFile(MyFirstLog.java:30)
+	at com.mudra.learn.module5.MyFirstLog.main(MyFirstLog.java:59)
+2017-10-14 21:50:11,032 [DEBUG] com.mudra.learn.module5.MyFirstLog *** File Not Found Exception *** FilePath:C:/Users/ppothuraju/workspace/LearnJava/src/com/mudra/learn/module5/readme1.txt 
+java.io.FileNotFoundException: C:\Users\ppothuraju\workspace\LearnJava\src\com\mudra\learn\module5\readme1.txt (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.mudra.learn.module5.MyFirstLog.readFile(MyFirstLog.java:29)
+	at com.mudra.learn.module5.MyFirstLog.<init>(MyFirstLog.java:21)
+	at com.mudra.learn.module5.MyFirstLog.main(MyFirstLog.java:54)
+2017-10-14 21:50:11,032 [DEBUG] com.mudra.learn.module5.MyFirstLog *** File Not Found Exception *** FilePath:C:/Users/ppothuraju/workspace/LearnJava/src/com/mudra/learn/module5/readme1.txt 
+java.io.FileNotFoundException: C:\Users\ppothuraju\workspace\LearnJava\src\com\mudra\learn\module5\readme1.txt (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.mudra.learn.module5.MyFirstLog.readFile(MyFirstLog.java:29)
+	at com.mudra.learn.module5.MyFirstLog.main(MyFirstLog.java:55)
+2017-10-14 22:10:01,205 [DEBUG] com.mudra.learn.module5.MyFirstLog *** File Not Found Exception *** FilePath:C:/Users/ppothuraju/workspace/LearnJava/src/com/mudra/learn/module5/readme1.txt 
+java.io.FileNotFoundException: C:\Users\ppothuraju\workspace\LearnJava\src\com\mudra\learn\module5\readme1.txt (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.mudra.learn.module5.MyFirstLog.readFile(MyFirstLog.java:29)
+	at com.mudra.learn.module5.MyFirstLog.main(MyFirstLog.java:55)
